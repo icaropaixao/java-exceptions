@@ -21,7 +21,6 @@ public class TesteExceptions {
             conta.sacar(1000);
             System.out.println(conta.getSaldo());
 
-
             // Lançando excepetions forçadamente
             ArithmeticException arithmeticException = new ArithmeticException("Deu erro");
             throw arithmeticException;
