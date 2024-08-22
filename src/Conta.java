@@ -31,7 +31,7 @@ public class Conta  {
     public void sacar(double valorSaque) {
         if (this.saldo < valorSaque) {
             // enviando exception caso o saldo seja insuficiente
-            throw new RuntimeException("Saldo insuficente");
+            throw new SaldoInsuficienteException("Motivo do erro: Saldo insuficiente"+ "\nSaldo atual: " + this.saldo +"\nValor do saque: " + valorSaque);
         }
         saldo -= valorSaque;
     }

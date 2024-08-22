@@ -18,7 +18,7 @@ public class TesteExceptions {
             conta.depositar(1000);
             System.out.println("O saldo da minha conta é: " + conta.getSaldo());
 
-            conta.sacar(1000);
+            conta.sacar(10001);
             System.out.println(conta.getSaldo());
 
             // Lançando excepetions forçadamente

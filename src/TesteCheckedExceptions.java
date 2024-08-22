@@ -6,7 +6,7 @@ import java.io.IOException;
 public class TesteCheckedExceptions {
 
     public static void main(String[] args){
-        
+
         // ERRO Checked (o compilador verifica e da erro, precisa passar o erro para a frente ou tratar o erro com try catch
         try {
             exemploChecked();
