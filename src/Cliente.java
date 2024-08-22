@@ -2,20 +2,20 @@ public class Cliente {
 
     private String nome;
     private String cpf;
-    private  String profissao;
+    private String profissao;
     private double salario;
 
-    public Cliente(String nome, String cpf){
+    public Cliente(String nome, String cpf) {
         this.nome = nome;
         this.cpf = cpf;
     }
 
     // USANDO MÉTODO GETTERS E SETTERS
-    public String getNome(){
+    public String getNome() {
         return this.nome;
     }
 
-    public void setNome(String nome){
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
@@ -52,4 +52,5 @@ public class Cliente {
                 ", cpf='" + cpf + '\'' +
                 '}';
     }
+
 }

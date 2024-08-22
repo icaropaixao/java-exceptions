@@ -26,22 +26,19 @@ public class Conta  {
         this.saldo += valorDeposito;
     }
 
-    public boolean sacar(double valorSaque) {
-        if (this.saldo >= valorSaque) {
-            saldo -= valorSaque;
-            return true;
-        } else {
-            return false;
+
+
+    public void sacar(double valorSaque) {
+        if (this.saldo < valorSaque) {
+            // enviando exception caso o saldo seja insuficiente
+            throw new RuntimeException("Saldo insuficente");
         }
+        saldo -= valorSaque;
     }
 
     void transferir(double valorTransferencia, Conta destino) {
-        boolean conseguiSacar = this.sacar(valorTransferencia);
-        if (conseguiSacar) {
-            destino.depositar(valorTransferencia);
-        } else {
-            System.out.println("Transferencia não realizada. Verifique o saldo.");
-        }
+        this.sacar(valorTransferencia);
+        destino.depositar(valorTransferencia);
     }
 
     // Métodos getters e setters
