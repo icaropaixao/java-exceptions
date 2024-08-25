@@ -1,3 +1,8 @@
+package test;
+
+import model.Cliente;
+import model.Conta;
+
 public class TesteExceptions {
 
 

@@ -1,7 +1,6 @@
-import javax.management.RuntimeErrorException;
-import java.io.File;
+package test;
+
 import java.io.FileNotFoundException;
-import java.io.IOException;
 
 public class TesteCheckedExceptions {
 

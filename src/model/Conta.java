@@ -1,4 +1,6 @@
-// classe abstrata para gerar um modelo base de CONTA e ter que especificar o tipo
+package model;// classe abstrata para gerar um modelo base de CONTA e ter que especificar o tipo
+
+import excepetions.SaldoInsuficienteException;
 
 public class Conta  {
     // Atributos privados
@@ -79,7 +81,7 @@ public class Conta  {
 
     @Override
     public String toString() {
-        return "Conta{" +
+        return "model.Conta{" +
                 "agencia=" + agencia +
                 ", numero=" + numero +
                 ", titular=" + titular +
